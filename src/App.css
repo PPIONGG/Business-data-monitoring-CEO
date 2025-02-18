@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+    to right top,
+    #460000,
+    #5a0000,
+    #6f0000,
+    #840000,
+    #990000,
+    #ad0000,
+    #c20000,
+    #d70000,
+    #eb0000,
+    #ff0000,
+    #ff4d4d,
+    #ff7f7f
+  );
+}
+
+.custom-password-input input {
+  font-weight: bold !important;
+  color: white !important;
+}
+
+.custom-input:focus-within,
+.custom-input:active,
+.custom-input:hover,
+.custom-input:focus {
+  border-color: #ff6b6b !important;
+  box-shadow: none !important;
+}
+
+.custom-input input {
+  font-weight: bold !important;
+}
+
+.custom-select .ant-select-selection-item {
+  font-weight: bold;
+}
+
+.custom-select .ant-select-selector {
+  
+  background: rgb(250, 195, 195) !important;
+  font-size: 16px !important;
+  box-shadow: none !important;
+  border-color: rgba(255, 255, 255, 0) !important;
+
+}
+
+.custom-select .ant-select-selector:focus-within,
+.ant-select-selector:hover {
+  border-color: #ff6b6b !important;
+  box-shadow: none !important;
+}
+
+
+/* ✅ ปรับสีพื้นหลังของตัวเลือกใน dropdown */
+.ant-select-dropdown .ant-select-item {
+  background-color: white !important; /* พื้นหลังปกติ */
+  color: #333 !important; /* สีข้อความ */
+  font-weight: bold !important;
+}
+
+/* ✅ เปลี่ยนสีพื้นหลังและตัวอักษรเมื่อ Hover */
+.ant-select-dropdown .ant-select-item-option-active {
+  background-color: #f59696 !important; /* สีเมื่อ Hover */
+  color: white !important;
+}
+
+/* ✅ เปลี่ยนสีพื้นหลังและตัวอักษรเมื่อถูกเลือก */
+.ant-select-dropdown .ant-select-item-option-selected {
+  background-color: #ff4d4d !important; /* สีเมื่อถูกเลือก */
+  color: white !important;
+}
