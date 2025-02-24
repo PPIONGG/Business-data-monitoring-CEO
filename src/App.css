@@ -16,10 +16,8 @@ body {
     #c20000,
     #d70000,
     #eb0000,
-    #ff0000,
-    #ff4d4d,
-    #ff7f7f
-  );
+    #ff0000
+      );
 }
 
 .custom-password-input input {
@@ -45,7 +43,7 @@ body {
 
 .custom-select .ant-select-selector {
   
-  background: rgb(250, 195, 195) !important;
+  background: rgba(255, 255, 255, 0.46) !important;
   font-size: 16px !important;
   box-shadow: none !important;
   border-color: rgba(255, 255, 255, 0) !important;
@@ -76,4 +74,24 @@ body {
 .ant-select-dropdown .ant-select-item-option-selected {
   background-color: #ff4d4d !important; /* สีเมื่อถูกเลือก */
   color: white !important;
+}
+
+
+/* ปรับ hover effect */
+.ant-menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border-radius: 8px;
+}
+
+/* ปรับ selected (active) item */
+.ant-menu-item-selected {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  color: #c20000 !important;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* ปรับไอคอนให้สีเข้ากันเมื่อ active */
+.ant-menu-item-selected .anticon {
+  color: #c20000 !important;
 }

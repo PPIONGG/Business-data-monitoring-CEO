@@ -11,7 +11,7 @@ import {
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
-import { api } from "../services/api";
+// import { api } from "../services/api";
 
 const { Option } = Select;
 
@@ -137,10 +137,10 @@ const Login = () => {
             <Input
               style={{
                 border: "1px solid rgba(255, 255, 255, 0)",
-                background: "rgb(250, 195, 195)",
+                background: "rgba(255, 255, 255, 0.46)",
                 fontSize: "16px",
                 fontWeight: "bold",
-                height : '45px',
+                height: "45px",
                 color: "#333",
                 transition: "all 0.3s ease",
               }}
@@ -164,10 +164,10 @@ const Login = () => {
             <Input.Password
               style={{
                 border: "1px solid rgba(255, 255, 255, 0)",
-                background: "rgb(250, 195, 195)",
+                background: "rgba(255, 255, 255, 0.46)",
                 borderRadius: "8px",
                 fontSize: "16px",
-                height : '45px',
+                height: "45px",
                 color: "#333",
                 transition: "all 0.3s ease",
               }}
@@ -187,6 +187,7 @@ const Login = () => {
               fontSize: "16px",
               background: "linear-gradient(135deg, #ff4d4d, #ff0000)",
               border: "none",
+              fontWeight: "bold",
               boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
             }}
           >

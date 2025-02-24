@@ -1,12 +1,17 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Login from "../pages/Login";
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import DashboardLayout from "../layouts/DashboardLayout";
-import Financial from "../pages/Financial";
-// import Inventory from "../pages/Inventory";
-// import Summary from "../pages/Summary";
 import { useAuthStore } from "../store/useAuthStore";
 import { JSX } from "react";
+import Inventory from "../pages/inventory";
+import PurchaseSummary from "../pages/purchase-summary";
+import SalesSummary from "../pages/sales-summary";
+import Financial from "../pages/financial";
+import Login from "../pages/login";
 
 const PrivateRoute = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated } = useAuthStore();
@@ -27,6 +32,9 @@ const AppRoutes = () => {
           }
         >
           <Route path="financial" element={<Financial />} />
+          <Route path="inventory" element={<Inventory />} />
+          <Route path="purchase-summary" element={<PurchaseSummary />} />
+          <Route path="sales-summary" element={<SalesSummary />} />
         </Route>
       </Routes>
     </Router>
