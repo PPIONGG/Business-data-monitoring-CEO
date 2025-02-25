@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right top,
     #460000,
     #5a0000,
@@ -17,7 +17,7 @@ body {
     #d70000,
     #eb0000,
     #ff0000
-      );
+      ); */
 }
 
 .custom-password-input input {

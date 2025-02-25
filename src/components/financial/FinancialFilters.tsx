@@ -23,7 +23,7 @@ export default function FinancialFilters() {
   const { year, month, setYear, setMonth } = useFinancialStore();
 
   return (
-    <Row gutter={16}>
+    <Row gutter={16} style={{ marginBottom: "10px" }}>
       <Col span={12}>
         <div style={{ display: "flex", alignItems: "center" }}>
           <div style={{ marginRight: "10px" }}>ปี</div>

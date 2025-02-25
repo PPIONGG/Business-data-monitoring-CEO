@@ -35,7 +35,7 @@ const Login = () => {
       if (response.status === 200) {
         message.success("เข้าสู่ระบบสำเร็จ");
         checkAuth();
-        navigate("/dashboard");
+        navigate("/dashboard/financial");
       } else {
         message.error("รหัสผู้ใช้หรือรหัสผ่านไม่ถูกต้อง");
       }
@@ -57,6 +57,8 @@ const Login = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        backgroundImage:
+          "linear-gradient(to right,#460000,#5a0000,#6f0000,#840000,#990000,#ad0000,#c20000,#d70000,#eb0000,#ff0000)",
       }}
     >
       <Card

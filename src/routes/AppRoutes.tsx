@@ -8,10 +8,10 @@ import DashboardLayout from "../layouts/DashboardLayout";
 import { useAuthStore } from "../store/useAuthStore";
 import { JSX } from "react";
 import Inventory from "../pages/inventory";
-import PurchaseSummary from "../pages/purchase-summary";
-import SalesSummary from "../pages/sales-summary";
-import Financial from "../pages/financial";
-import Login from "../pages/login";
+import SalesSummaryPage from "../pages/sales-summary";
+import Financial from "../pages/Financial";
+import Login from "../pages/Login";
+import PurchaseSummaryPage from "../pages/purchase-summary";
 
 const PrivateRoute = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated } = useAuthStore();
@@ -33,8 +33,8 @@ const AppRoutes = () => {
         >
           <Route path="financial" element={<Financial />} />
           <Route path="inventory" element={<Inventory />} />
-          <Route path="purchase-summary" element={<PurchaseSummary />} />
-          <Route path="sales-summary" element={<SalesSummary />} />
+          <Route path="purchase-summary" element={<PurchaseSummaryPage />} />
+          <Route path="sales-summary" element={<SalesSummaryPage />} />
         </Route>
       </Routes>
     </Router>

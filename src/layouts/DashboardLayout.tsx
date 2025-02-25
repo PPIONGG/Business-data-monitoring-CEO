@@ -30,7 +30,7 @@ const DashboardLayout = () => {
         <div
           style={{
             flexGrow: 1,
-            padding: "20px",
+            padding: "10px",
             backgroundColor: "rgb(236, 236, 236)",
           }}
         >
